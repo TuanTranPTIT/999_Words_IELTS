@@ -23,7 +23,10 @@ public enum ErrorCodeEnum {
     ID_TOPIC_INVALID("TOPIC0001", "Id topic không hợp lệ", HttpStatus.BAD_REQUEST),
 
     //WORD
-    WORD_NOT_EXISTED("WORD0000", "Từ không tồn tại", HttpStatus.NOT_FOUND)
+    WORD_NOT_EXISTED("WORD0000", "Từ không tồn tại", HttpStatus.NOT_FOUND),
+
+    //USERLEARNEDCOUNT
+    USERLEARNEDCOUNT_NOT_EXISTED("USERLEARNEDCOUNT0000","Điểm không tồn tại", HttpStatus.NOT_FOUND)
 
     ;
     private final String code;

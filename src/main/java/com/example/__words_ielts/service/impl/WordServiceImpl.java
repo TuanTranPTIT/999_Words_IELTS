@@ -19,8 +19,8 @@ public class WordServiceImpl implements WordService {
 
 
     @Override
-    public List<WordResponse> getWordByTopicId(Integer id) {
-        List<Word> words = wordRepository.findAllByTopicId(id);
+    public List<WordResponse> getWordByTopicId(Integer topicId) {
+        List<Word> words = wordRepository.findAllByTopicId(topicId);
         return words.stream()
                 .map(WordResponse::fromWord)
                 .collect(Collectors.toList());
